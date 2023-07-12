@@ -9,8 +9,8 @@
     <h1>주문하기</h1>
 
     <form method="post">
-        <label for="userName">고객명 : </label>
-        <input type="text" id="userName" name="userName">
+        <label for="name">고객명 : </label>
+        <input type="text" name="name" id="name">
     
         <br><br>
     
@@ -26,26 +26,26 @@
 
         <fieldset>
             <legend>피자사이즈</legend>
-            <input type="radio" name="size" id="sizeS"> <label for="sizeS">Small</label>
+            <input type="radio" name="size" id="small" value="small"> <label for="small">Small</label>
             <br><br>
-            <input type="radio" name="size" id="sizeM"> <label for="sizeM">Medium</label>
+            <input type="radio" name="size" id="medium" value="medium"> <label for="medium">Medium</label>
             <br><br>
-            <input type="radio" name="size" id="sizeL"> <label for="sizeL">Large</label>
+            <input type="radio" name="size" id="large" value="large"> <label for="large">Large</label>
         </fieldset>
 
         <fieldset>
             <legend>토핑 선택</legend>
-            <input type="checkbox" name="toping" id="toping1" value="bacon"> 
-            <label for="toping1">베이컨</label>
+            <input type="checkbox" name="topping" id="bacon" value="bacon"> 
+            <label for="bacon">베이컨</label>
             <br><br>
-            <input type="checkbox" name="toping" id="toping2" value="cheese"> 
-            <label for="toping2">치즈</label>
+            <input type="checkbox" name="topping" id="cheese" value="cheese"> 
+            <label for="cheese">치즈</label>
             <br><br>
-            <input type="checkbox" name="toping" id="toping3" value="onion"> 
-            <label for="toping3">양파</label>
+            <input type="checkbox" name="topping" id="onion" value="onion"> 
+            <label for="onion">양파</label>
             <br><br>
-            <input type="checkbox" name="toping" id="toping4" value="mushroom"> 
-            <label for="toping4">버섯</label>
+            <input type="checkbox" name="topping" id="mushroom" value="mushroom"> 
+            <label for="mushroom">버섯</label>
         </fieldset>
 
     <br>
