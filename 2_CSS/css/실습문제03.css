@@ -1,0 +1,70 @@
+header {
+    width: 300px;
+    /* background-color: black; */
+    height: 100vh;
+    position: fixed;
+    background-image: url('../../resources/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 5rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.header-content ul {
+    font-size: 2rem;
+}
+
+.header-content ul li {
+    margin-bottom: 15px;
+}
+
+main {
+    padding-left: 300px;
+    margin-left: 10px;
+}
+
+.main-content h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 20pxl;
+}
+
+.main-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content img {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 800px;
+    align-self: center;
+}
+
+.main-content p {
+    line-height: 1.7;
+}

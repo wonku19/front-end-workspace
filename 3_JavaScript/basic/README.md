@@ -172,3 +172,88 @@ false || false; // false
 ```js
 Boolean(데이터);
 ```
+
+<br>
+
+[위로 이동](#목차)
+
+# 조건문
+
+```js
+if(조건) {
+    조건이 true
+} else {
+    조건이 false
+}
+```
+
+## 삼항 연산자
+
+```js
+조건 ? 조건이 true : 조건이 false
+```
+
+## else if
+
+- else if는 여러개 사용
+
+```js
+if(조건 A) {
+    조건 A가 true
+} else if(조건 B) {
+    조건 A가 false이면서, 조건 B가 true
+} else {
+    모든 조건이 false
+}
+```
+
+## switch
+
+```js
+switch(데이터) {
+    case 조건 A:
+        조건 A가 true
+        break;
+    case 조건 B:
+        조건 B가 true
+        break;
+    default:
+        모든 조건이 false
+        break;
+}
+```
+
+<br>
+
+[위로 이동](#목차)
+
+# 배열
+
+```js
+const 배열 = [데이터, 데이터, 데이터, ...];
+```
+
+## 문자열 -> 배열
+
+- 공백을 기준으로 자른다. 
+- 특정 구분자로 나누고 싶다면 split 안에 지정한다.
+
+```js
+문자열.split();
+```
+
+## 배열 -> 문자열
+
+- 특정 구분자로 나누고 싶다면 join 안에 지정
+
+```js
+배열.join();
+```
+
+## 데이터에 접근
+
+```js
+배열[index];
+```
+
+## 인덱스 찾기

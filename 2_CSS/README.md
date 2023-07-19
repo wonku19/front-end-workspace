@@ -370,7 +370,7 @@ font: font-style font-variant font-weight font-size/line-height font-family;
 
 ### rgb / rgba 표기법
 - rgb 표기법은 16진수 표기법과 다르게 10진수로 Red, Green, Blue를 표시
-- rgba 표깁접은 rgb에 불투명도 값을 추가로 지정(0은 완전 투명, 1은 완전 불투명)
+- rgba 표기법은 rgb에 불투명도 값을 추가로 지정(0은 완전 투명, 1은 완전 불투명)
 ```css
 rgb(red(0~255), green(0~255), blue(0~255));
 rgba(red(0~255), green(0~255), blue(0~255), alpha(0~1));
@@ -734,7 +734,7 @@ hsla(Hue(0~360), Saturation(0~100%), Brightness(0~100%), alpha(0~1));
 - center : 아이템들을 가운데로 정렬
 - space-between : 아이템들 사이에 균일한 간격 생성
 - space-around : 각 아이템의 좌우에 균일한 간격 생성
-- space-evenly : 아이템들의 사이에 양 끝에 균일한 간격 생성
+- space-evenly : 아이템들의 사이에 양 끝에 균일한 간격 
 
 ## align-items
 - 수직축 방향으로 정렬
