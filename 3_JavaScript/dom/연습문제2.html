@@ -10,22 +10,21 @@
     <h2 class="clock"></h2>
 
     <script>
-        const clock = document.querySelector(".clock");
-
-        function dDay() {
-            const Date = new Date();
+        function dDay(){
+            const clock = document.querySelector(".clock");
+            const date = new Date();
             const lastDay = new Date("2024-01-01 00:00:00");
-            const diffDay = lastDay - Date;
 
-            const dDay = Math.floor(diffDay / (1000 * 60 * 60 * 24));
-            const dHour = Math.floor((diffDay / (1000 * 60 * 60)) % 24);
-            const dMin = Math.floor((diffDay / (1000 * 60)) % 60);
-            const dSec = Math.floor((diffDay / 1000) % 60);
+            const diff=lastDay-date;
+            const resultDay = Math.floor(diff / (1000*60*60*24));
+            const resultHour = Math.floor((diff/(1000*60*60))%24);
+            const resultMin = Math.floor((diff/(1000*60)%60));
+            const resultSec = Math.floor((diff/1000)%60);
 
-            clock.innerText = `${dDay}일 ${dHour}시 ${dMin}분 ${dSec}초 남음`;
+            clock.innerText =`${resultDay}일 ${resultHour}시간 ${resultMin}분 ${resultSec}초 남음`;
         }
         dDay();
-        setInterval(dDay, 1000);
+        setInterval(dDay,1000);
     </script>
 </body>
 </html>
