@@ -87,3 +87,30 @@ $('#textarea2').on('keyup', function(e) {
         $('#counter').text(currentLength);
     }
 });
+
+// 3) 아이디 조건 확인
+$('#userId').keyup(function(e) {
+    const regExp = /^[a-z][a-z0-9]{4,12}$/;
+    const id = $(e.target).val();
+    if(regExp.test(id)) { // 사용 가능한 아이디입니다.
+        $('#idCheck').text('사용 가능한 아이디입니다.').css('color', 'green');
+    } else if(id ==="") {
+        $('idCheck').text("");
+    } else { // 사용 불가능한 아이디입니다.
+        $('#idCheck').text('사용 불가능한 아이디입니다.').css('color', 'red');
+    }
+});
+
+// 3. trigger() 메소드
+// let num = 0;
+$('#area3').on('click', function() {
+    // $('#counter2').text(++num);
+
+    let currentCount = parseInt($('#counter2').text());
+    $('#counter2').text(++currentCount);
+});
+
+// btn을 눌렀을때 위와 동일한 효과 나오게 만들기
+$('#btn').on('click', function() {
+    $('#area3').trigger('click');
+});
