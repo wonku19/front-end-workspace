@@ -219,7 +219,7 @@ section {
   line-height: 1.2;
 }
 
-@media screen and (min-width: 927px) {
+@media screen and (min-width: 600px) {
   .header-center {
     justify-content: center;
   }
